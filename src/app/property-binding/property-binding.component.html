@@ -1,0 +1,6 @@
+<h2>Property binding</h2>
+
+<button (click)="mostrar()">Mostrar parágrafo</button>
+
+<p [hidden]="!verParagrafo">Paragrafo habilitado</p>
+<p bind-hidden="!verParagrafo">Paragrafo habilitado com bind</p>
