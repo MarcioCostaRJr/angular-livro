@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+
+  msgAlerta():void{
+    alert('Livro Angular 2');
+  }
+
 }
