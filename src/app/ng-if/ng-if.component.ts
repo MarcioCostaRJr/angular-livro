@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIfComponent implements OnInit {
 
+  mostraNome: boolean;
+  cursos: string [] = [];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  mostrar(): void {
+    this.mostraNome = !this.mostraNome;
+  }
+
+  getValor(): boolean {
+    return this.mostraNome;
+  }
+
+  addCurso(): void{
+    this.cursos.push('Angular 2');
+  }
 }
